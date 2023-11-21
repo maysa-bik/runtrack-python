@@ -1,0 +1,5 @@
+chaine = "abcdefghijklmnopqrstuvwxyz" * 10
+for i in range(0, len(chaine) ):
+    print(chaine[0:i])
+
+

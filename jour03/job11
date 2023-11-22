@@ -1,0 +1,19 @@
+def time_to_text(minutes):
+    heures = minutes // 60
+    minutes_restantes = minutes % 60
+    if heures == 1:
+        heures_afficher = "1 herure"
+    else:
+        heures_afficher = f"{heures} heures"
+
+    if minutes_restantes == 1:
+        minutes_afficher = "1 minute"
+    else:
+        minutes_afficher = f"{minutes_restantes} minutes"
+
+    # Afficher le résultat 
+    print(heures_afficher , "est" , minutes_afficher)
+    
+
+# teste
+time_to_text(160)                   

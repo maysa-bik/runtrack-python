@@ -1,0 +1,11 @@
+def Add(a , b):
+    if type(a) == int and type(b) ==int:
+        resultat = a + b
+        print("la somme a et b =", resultat)
+    else:
+        print("vous devez incérer des nombres entiers!")    
+    
+Add(5 , 30)
+Add(9 , 25)
+Add(59 , 177)    
+Add(5.7 , 18.98)

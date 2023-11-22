@@ -1,0 +1,18 @@
+def une_String_developpeur(langage):
+    if langage == "JavaScript":
+        print("Tu es un développeur web.")
+    elif langage == "Python":
+        print("Tu es un développeur IA.")
+    elif langage == "Java":
+        print("Tu es un développeur logiciel.")
+    elif langage == "ReactJS":
+        print("Tu es un développeur mobile.")
+    else:
+        print("Un jour, je serai le meilleur développeur...")
+
+# Appels de la fonction avec des paramètres différents
+une_String_developpeur("JavaScript")
+une_String_developpeur("Python")
+une_String_developpeur("Java")
+une_String_developpeur("ReactJS")
+une_String_developpeur("cisco")

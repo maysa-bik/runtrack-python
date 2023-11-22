@@ -1,0 +1,6 @@
+def inverser(mot):
+    return(mot[::-1])
+chaine = "nikana"
+resultat = inverser(chaine)
+#afficher le resultat
+print(resultat)

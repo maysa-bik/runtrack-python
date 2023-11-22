@@ -1,0 +1,5 @@
+#""" """  3 pour un comentair  (note)#
+#return il n'ai pas afficher  c'est le contre print#
+
+#if ( نضعها اول العملية اذا كان لدينا تكملة لا نستطيع اعادتها لذلك نستخدم elif تعني واذا )#
+# float (نستخدمها من اجل وضع ارقام مع فواصل )

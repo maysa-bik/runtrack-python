@@ -1,0 +1,19 @@
+def nomber():
+    try:
+        # Demander à l'utilisateur de saisir un nomber 
+        i = int(input("Entrez un nomber entier positif : "))
+
+        # Vérification de pair ou impair 
+        if i >= 0:
+            if i % 2 == 0:
+                print("Le nomber est pair.")
+            else:
+                print("Le nomber est impair.")
+        else:
+            print("Veuillez enter un nomber positif.")
+    except ValueError:
+        print("Veuillez entrer un nomber entier.")
+#appeler la fonction 
+nomber()
+nomber()
+                    

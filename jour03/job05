@@ -1,0 +1,44 @@
+def calcule(num1, operator, num2):
+    if operator == "+":
+        return num1 + num2 
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    elif operator == "/":
+        if num2 == 0:
+            print(" Erreur : Division par zéro",)  
+        else:
+            return num1 / num2
+    elif operator == '%' :
+        if num2 == 0:
+            print("message d'erreur")
+        else:
+            return num1 / num2
+    else:
+        print("erruer")
+
+# Exemples d'appels de la fonction
+resultat_addition = calcule(5, '+', 3)
+resultat_multiplication = calcule(4, '*', 6)
+resultat_soustraction = calcule(8, '-', 2)
+resultat_division_valide = calcule(10, '/', 2)
+resultat_modulo_valide = calcule(11, '%', 3)
+resultat_modulo_par_zero = calcule(8, '%', 0)
+
+# Affichage des résultats
+print("Résultat de l'addition :", resultat_addition)
+print("Résultat de la multiplication :", resultat_multiplication)
+print("Résultat de la soustraction :", resultat_soustraction)
+print("Résultat de la division (valide) :", resultat_division_valide)
+print("Résultat du modulo (valide) :", resultat_modulo_valide)
+print("Résultat du modulo (par zéro) :", resultat_modulo_par_zero)
+
+
+
+
+
+
+        
+          
+    

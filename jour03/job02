@@ -1,0 +1,7 @@
+def My_print_name(name):
+    print("Name:", name)
+
+# Appels de la fonction avec des paramètres différents
+My_print_name("sophia")
+My_print_name("kamelia")
+My_print_name("Maysa")

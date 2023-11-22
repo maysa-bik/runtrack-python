@@ -1,0 +1,12 @@
+def afficher_positif_negatif(nombre):
+    if nombre > 0:
+        print(f"Le nombre {nombre} est positif.")
+    elif nombre < 0:
+        print(f"Le nombre {nombre} est négatif.")
+    else:
+        print(f"Le nombre {nombre} est égal à 0.")
+
+# Appels de la fonction avec des paramètres différents
+afficher_positif_negatif(10)
+afficher_positif_negatif(-31)
+afficher_positif_negatif(0)

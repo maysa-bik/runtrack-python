@@ -1,0 +1,3 @@
+liste_fruits =['pomme', 'cerise', 'orange', 'Melon']
+liste_fruits.insert(2, 'Mange')
+print(liste_fruits)

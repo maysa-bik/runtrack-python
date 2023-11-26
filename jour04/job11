@@ -1,0 +1,18 @@
+L = [7, 11, 42, 39, 2]
+print(L)
+liste = []
+for i in L:
+    liste.append(i + 1)
+print(liste)    
+
+#2 manière :
+L = [7, 11, 42, 39, 2]
+
+def ma_liste(liste):
+    nouvelle_liste = []  # Utiliser une nouvelle liste pour stocker les éléments modifiés
+    for i in liste:
+        nouvelle_liste.append(i + 1)
+    return nouvelle_liste
+
+resultat = ma_liste(L)
+print(resultat)

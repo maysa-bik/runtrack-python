@@ -1,0 +1,14 @@
+fruits = ['pomme', 'cerise', 'orange']
+print(fruits[-2])
+
+#____________________________
+
+def obtenir_element_negatif(liste, index):
+    return liste[index]
+
+# Exemple d'utilisation
+fruits = ['pomme', 'cerise', 'orange']
+resultat = obtenir_element_negatif(fruits, -2)
+
+# Affichage du résultat
+print(resultat)

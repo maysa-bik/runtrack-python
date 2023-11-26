@@ -1,0 +1,22 @@
+#__________________________
+def my_len(list):
+    count = 0
+    for i in list:
+        count += 1
+    return count
+
+L = [7, 11, 42, 39, 2]
+print(my_len(L)) 
+
+#_________________________________________
+
+def timetotext(minutes):
+    heures = minutes // 60
+    minutes_restantes = minutes % 60
+
+    print(f"{heures} heures {minutes_restantes} minutes")
+
+# Exemple d'utilisation
+timetotext(145)
+
+

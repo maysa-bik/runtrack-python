@@ -1,0 +1,38 @@
+def arrondir(liste):
+        # Arrondir les nombres dans la liste
+    liste_arrondie = []
+    for i in liste:
+        partie_entiere = int(i)
+        partie_decimale = i - partie_entiere
+        if partie_decimale >= 0.5:
+            partie_entiere += 1
+        liste_arrondie += [partie_entiere] 
+         # Trier la liste arrondie dans l'ordre croissant sans utiliser de fonction système
+    n = 0
+    while n < n_elements(liste_arrondie):
+        i = 0
+        while i < n_elements(liste_arrondie) - n - 1:
+            if liste_arrondie[i] > liste_arrondie[i + 1]:
+                # Échanger les éléments
+                liste_arrondie[i], liste_arrondie[i + 1] = liste_arrondie[i + 1], liste_arrondie[i]
+            i += 1
+        n += 1
+
+    return liste_arrondie
+
+# Fonction pour obtenir le nombre d'éléments dans une liste
+def n_elements(lst):
+    count = 0
+    for _ in lst:
+        count += 1
+    return count
+
+# Liste donnée
+ma_liste = [22.4, 4.0, 16.22, 9.10, 11.00, 12.22, 14.20, 5.20, 17.50]
+print(ma_liste)
+
+# Appel de la fonction pour arrondir et trier la liste
+resultat = arrondir(ma_liste)
+
+# Affichage du résultat
+print(resultat)

@@ -1,0 +1,65 @@
+def my_long_word(chiffre, chaine):
+    # Initialise 2 chaines vide pour stockre les longes et les mots actuels
+    mots_long = ""
+    mot_actuel = ""
+
+    for mot in chaine:
+        if mot.isalpha(): #vérification de type de caractére
+            mot_actuel += mot  # Ajouter le caractère à la fin du mot actuel 
+
+        elif mot.isspace():
+            mot_long = False
+            for _ in mot_actuel:
+                mot_long = True
+                break  
+
+            if mot_long and len(mot_actuel) > chiffre:
+                mots_long += mot_actuel + " "
+
+            mot_actuel = " "
+
+            # Vérifie une dernière fois le dernier mot après la boucle 
+
+            mot_long = False    
+            for _ in mot_actuel:
+                mot_long = True
+                break
+
+            if mot_actuel and mot_actuel[-1].isalpha():
+                mots_long += mot_actuel
+
+            return mots_long  
+
+        #tester 
+        taille_minimale = 3
+        chaine = "la peur est le chemain vers le côté obscur, la peur mène à la colère, la colère la colère mène à la haine, la haine mène à la souffrance" 
+        print(my_long_word(taille_minimale, chaine)) 
+
+#____________________________________
+
+def my_long_word(chiffre, chaine):
+    # Initialise 2 chaines vide pour stocker les longs mots et le mot actuel
+    mots_longs = ""
+    mot_actuel = ""
+
+    for char in chaine:
+        if char.isalpha():  # Vérification du type de caractère
+            mot_actuel += char  # Ajouter le caractère à la fin du mot actuel
+        elif char.isspace():
+            # Si l'espace est rencontré, vérifier si le mot actuel est suffisamment long
+            if len(mot_actuel) > chiffre:
+                mots_longs += mot_actuel + " "
+            mot_actuel = ""  # Réinitialiser le mot actuel après avoir ajouté à mots_longs
+    # Vérifier une dernière fois le dernier mot après la boucle
+    if len(mot_actuel) > chiffre:
+        mots_longs += mot_actuel
+
+    return mots_longs
+
+# Tester
+taille_minimale = 3
+chaine = "la peur est le chemin vers le côté obscur, la peur mène à la colère, la colère mène à la haine, la haine mène à la souffrance"
+resultat = my_long_word(taille_minimale, chaine)
+print(resultat)
+
+    

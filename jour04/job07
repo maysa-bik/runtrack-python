@@ -1,0 +1,23 @@
+L =[8, 24,48,2,16]
+nombre_multiples_3 = 0
+
+for i in L:
+    if i % 3 == 0:
+        nombre_multiples_3 += 1
+
+# Affichage du résultat
+print(nombre_multiples_3)
+
+#___________________________
+L =[8, 24,48,2,16]
+def multiples_de_3(liste):
+    compte = 0
+    for nomber in liste:
+        if nomber % 3 == 0:
+            compte += 1
+    print(compte)
+#___________________
+
+   
+         
+

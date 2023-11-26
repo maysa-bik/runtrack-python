@@ -1,0 +1,23 @@
+def ma_doublons(liste):
+    Nouvelle_liste = []
+    i = 0
+    while True:
+        try:
+            nomber = liste[i]
+        except IndexError:
+            break  # Sortir de la boucle lorsque l'index dépasse la longueur de la liste
+        
+        if nomber not in Nouvelle_liste:
+            Nouvelle_liste += [nomber] 
+        i += 1
+    return Nouvelle_liste
+
+# Liste donnée
+ma_liste = [10, 20, 30, 20, 10, 50, 60, 40, 80, 50, 40]
+print(ma_liste)
+
+# Appel de la fonction pour supprimer les doublons
+liste_sans_doublons = ma_doublons(ma_liste)
+
+# Affichage du résultat
+print(liste_sans_doublons)

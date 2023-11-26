@@ -1,0 +1,11 @@
+def manipuler_liste(L):
+    print(L)
+    print(L[1])
+    L[3] = L[2] + L[4]
+    print(L)
+    print(L[-1])
+
+
+# Utilisation de la fonction avec la liste donnée
+ma_liste = [7, 5, 8, 3, 2]
+manipuler_liste(ma_liste)
